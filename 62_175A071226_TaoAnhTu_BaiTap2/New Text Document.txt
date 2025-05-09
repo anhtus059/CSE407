@@ -1,0 +1,16 @@
+class Animal:
+    def MakeSound(self):
+        return ""
+
+class Dog(Animal):
+    def MakeSound(self):
+        return "Woof"
+
+class Cat(Animal):
+    def MakeSound(self):
+        return "Meow"
+
+
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(f"Âm thanh của con vật: {animal.MakeSound()}")
